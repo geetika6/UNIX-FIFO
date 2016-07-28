@@ -1,5 +1,5 @@
 #include "header.h"
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 
 	int reqfd,resfd,client_fifo_fd,num_data;
@@ -9,8 +9,10 @@ int main(int argc, char **argv)
 	struct data *rdata[10];
 	struct data *resdata[10];
 	pid_t pid;
-	num_data=(int)(argv[1][0]-'0');
-	printf("num_data =%d\n",(int)(argv[1][0]-'0'));
+	//num_data=(int)(argv[1][0]-'0');
+	//printf("num_data =%d\n",(int)(argv[1][0]-'0'));
+	num_data=(int)((*argv[1])-'0');
+	printf("num_data =%d\n",num_data);
 
 	for(int i=0;i<num_data;i++)
 	{
