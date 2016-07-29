@@ -15,3 +15,10 @@ _______         |           |     Pxfifo  ________
 |_____|   |     |___________|
           |
         --|
+        
+        
+Review comments from peers @lethaldose
+#TODO
+1.  Add error handling in server-expected and unexpected errors(try-catch)
+2.  input validation in processing client
+3.  Handling error packet in req client and implement timeoue
